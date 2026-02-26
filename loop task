@@ -112,6 +112,88 @@ public class cares {
     	}
 	    		
 	    	}
+
+
+package task2;
+import java.util.Scanner;
+public class rose {
+
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		
+		
+//	13.sum of digit
+//		int num=1234, sum=0;
+//		for(; num>0; num/=10){
+//		    sum+=num%10;
+//		}
+//		System.out.println(sum);
+		
+	//14.	Print until user enters 0
+	
+//		int n=1;
+//		while(n!=0){
+//		    n=sc.nextInt();
+//		}
+		
+		//15.reverse number
+		
+//		int num=1234, rev=0;
+//		while(num>0){
+//		    rev=rev*10 + num%10;
+//		    num/=10;
+//		}
+//		System.out.println(rev);
+//
+		// 16. palindrom 
+		
+//		int num=121;
+//		 int temp=num;
+//		int rev=0;
+//		while(num>0){
+//		    rev=rev*10 + num%10;
+//		    num/=10;
+//		}
+//		if(temp==rev) System.out.println("Palindrome");
+		
+		 // count the digit
+//		int num=1234555,count=0;
+//		while(num>0){
+//		    count++;
+//		    num/=10;
+//		}
+//		System.out.println(count);
+		 
+		
+		// large digit
+//		int num=38512,max=0;
+//		while(num>0){
+//		    int d=num%10;
+//		    if(d>max) max=d;
+//		    num/=10;
+//		}
+//		System.out.println(max);
+		
+		
+		// do-while loop
+		
+		
+//		int choice;
+//		do{
+//		    System.out.println("1.Add 2.Exit");
+//		    choice=sc.nextInt();
+//		}while(choice!=2);
+		
+		
+		//
+//		int ch;
+//		do{
+//		    System.out.println("1.Add 2.Sub 3.Exit");
+//		    ch=sc.nextInt();
+//		}while(ch!=3);
+	}
+}
+
 	    
 	
 
