@@ -1,1 +1,265 @@
+package myProject;
+
+import java.util.Scanner;
+
+public class statement {
+
+	public static void main(String[] args) {
+		// if task
+		//1.
+		
+		Scanner sc=new Scanner(System.in);
+	
+		int a=sc.nextInt();
+		// 1. Number > 100
+		if(a > 100) {
+			System.out.println("Greater than 100");
+		}
+
+		// 2. Number < 0
+		if(a < 0) {
+			System.out.println("Negative number");
+		}
+
+		// 3. Character is 'A'
+		if(a == 'A') {
+			System.out.println("Character is A");
+		}
+
+		// 4. Divisible by 7
+		if(a % 7 == 0) {
+			System.out.println("Divisible by 7");
+		}
+
+		// 5. Marks exactly 100
+		if(a == 100) {
+			System.out.println("Full marks");
+		}
+
+	
+
+		// 7. Ends with digit 5
+		if(a % 10 == 5) {
+			System.out.println("Ends with 5");
+		}
+
+		// 8. Salary = 25000
+		if(a == 25000) {
+			System.out.println("Salary 25000");
+		}
+
+		// 9. Correct PIN
+	//	if(ch.equals("1234")) {
+	//	System.out.println("Correct PIN");
+
+		// 10. Three-digit number
+		if(a >= 100 && a <= 999) {
+			System.out.println("3-digit");
+		}
+
+		// 11. Divisible by 2 and 3
+		if(a%2==0 && a%3==0) {
+			System.out.println("Divisible by 2 & 3");
+		}
+
+		// 12. Character '@'
+	//	if(ch=='@') System.out.println("Special char @");
+
+		// 13. Temperature = 0
+		if(a==0) {
+			System.out.println("Freezing point");
+		}
+
+		// 14. Year 2024
+		if(a==2024) {
+			System.out.println("Current year");
+		}
+
+		// 15. Balance zero
+		if(a==0) {
+			System.out.println("Zero balance");
+		}
+
+	}
+
+}
+
+
+//IF-ELSE TASK
+
+
+
+package myProject;
+
+import java.util.Scanner;
+
+public class some {
+
+	public static void main(String[] args) {
+		// IF-ELSE
+             Scanner sc=new Scanner(System.in);
+             int a=sc.nextInt();
+          // 1. Number > 50
+             if(a>50) {
+            	 System.out.println("Greater");
+             }
+             else {
+            	 System.out.println("Not greater");
+             }
+
+             // 2. Divisible by 9
+             if(a%9==0) {
+            	 System.out.println("Divisible");
+             }
+             else {
+            	 System.out.println("Not divisible");
+             }
+
+             // 3. Compare strings
+             if(str1.equals(str2)) {
+            	 System.out.println("Equal");
+             }
+             else {
+            	 System.out.println("Not equal");
+             }
+
+             // 4. Senior citizen
+             if(a>60) {
+            	 System.out.println("Senior");
+             }
+             else {
+            	 System.out.println("Not senior");
+             }
+
+             // 5. Two-digit number
+             if(a>=10 && a<=99) {
+            	 System.out.println("Two digit");
+             }
+             else {
+            	 System.out.println("Not two digit");
+             }
+
+             // 6. Alphabet check
+             if(Character.isLetter(ch)) {
+            	 System.out.println("Alphabet");
+             }
+             else {
+            	 System.out.println("Not alphabet");
+             }
+
+             // 7. Perfect square
+             int root=(int)Math.sqrt(num);
+             if(root*root==num) {
+            	 System.out.println("Perfect square");
+             }
+             else {
+            	 System.out.println("Not perfect square");
+             }
+
+             // 8. Free delivery
+             if(a>1000) {
+            	 System.out.println("Free delivery");
+             }
+             else {
+            	 System.out.println("No free delivery");
+             }
+
+             // 9. Attendance
+             if(a>=75) {
+            	 System.out.println("Eligible");
+             }
+             else {
+            	 System.out.println("Not eligible");
+             }
+
+             // 10. Multiple of 4
+             if(a%4==0) {
+            	 System.out.println("Multiple of 4");
+             }
+             else {
+            	 System.out.println("Not multiple");
+             }
+	}
+
+}
+
+
+//IF ELSE IF TASK
+
+
+package myProject;
+
+import java.util.Scanner;
+
+public class some {
+
+	public static void main(String[] args) {
+		Scanner sc.new Scanner(System.in);
+		int a=sc.nextInt();
+		int b=sc.nextInt();
+		int c=sc.nextInt();
+		// 1. Season
+		if(a>=3 && a<=5) {
+			System.out.println("Summer");
+		}
+		else if(a>=6 && a<=9) {
+			System.out.println("Monsoon");
+		}
+		else if(a>=10 && a<=11) {
+			System.out.println("Autumn");
+		}
+		else {
+			System.out.println("Winter");
+		}
+
+		// 2. Smallest of 3
+		if(a<b && a<c) {
+			System.out.println("A smallest");
+		}
+		else if(b<c) {
+			System.out.println("B smallest");
+		}
+		else {
+			System.out.println("C smallest");
+		}
+
+		// 3. Positive / Negative / Zero
+		if(a>0) {
+			System.out.println("Positive");
+		}
+		else if(a<0) {
+			System.out.println("Negative");
+		}
+		else {
+			System.out.println("Zero");
+		}
+
+		// 4. Marks category
+		if(a>=90) {
+			System.out.println("Distinction");
+		}
+		else if(a>=50) {
+			System.out.println("Pass");
+		}
+		else {
+			System.out.println("Fail");
+		}
+
+		// 5. Temperature category
+		if(a<=0) {
+			System.out.println("Freezing");
+		}
+		else if(a<=20) {
+			System.out.println("Cold");
+		}
+		else if(a<=35) {
+			System.out.println("Warm");
+		}
+		else {
+			System.out.println("Hot");
+		}
+	}
+}
+
+
 
