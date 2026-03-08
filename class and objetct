@@ -1,0 +1,139 @@
+package task2;
+import java.util.Scanner;
+class product{
+	String productName;
+	double priceperunit;
+	int Qulatity;
+	public String productname;
+	
+	void Calculator()
+	 {
+		 double total=priceperunit*Qulatity;
+		 System.out.println("productName:"+ productName);
+		 System.out.println("total amount:"+total);
+	 }
+}
+
+public class task1 {
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		product p=new product();
+		System.out.println("enter the product name:");
+		p.productname=sc.toString();
+		System.out.println("enter the price per unit:");
+		p.priceperunit=sc.nextDouble();
+		System.out.println("enter the Qulatity");
+		p.priceperunit=sc.nextInt();
+	
+		p.Calculator();
+		
+
+	}
+
+}
+
+
+// second one
+
+package pr;
+
+import java.util.Scanner;
+
+class student{
+	String name;
+	int rollno;
+	int t1,t2,t3,t4,t5;
+	
+	void result() {
+		int total=t1+t2+t3+t4+t5;
+		int avagage=total/5;
+		System.out.println("total mark:"+total);
+		System.out.println("avarage mark:"+avagage);
+		
+		 if (avagage >= 90)
+	            System.out.println("Grade: A");
+	        else if (avagage >= 75)
+	            System.out.println("Grade: B");
+	        else if (avagage >= 50)
+	            System.out.println("Grade: C");
+	        else
+	            System.out.println("Grade: Fail");
+	}
+}
+
+public class product {
+
+	public static void main(String[] args) {
+		
+        Scanner sc = new Scanner(System.in);
+        student a=new student();
+        System.out.println("Enter the student name:");
+        a.name = sc.nextLine();	
+        System.out.println("Enter the roll number:");
+        a.rollno=sc.nextInt();
+        System.out.println("Enter mark of 5 subject:");
+        a.t1=sc.nextInt();	
+        a.t2=sc.nextInt();	
+        a.t3=sc.nextInt();	
+        a.t4=sc.nextInt();	
+        a.t5=sc.nextInt();	
+        a.result();
+
+        
+	}
+
+}
+output
+
+Enter the student name:
+akshaya
+Enter the roll number:
+21
+Enter mark of 5 subject:
+
+75
+75
+75
+75
+75
+total mark:375
+avarage mark:75
+Grade: B
+
+
+
+// third one
+
+
+package pr;
+
+import java.util.Scanner;
+
+class car{
+	String brand;
+	int price;
+	
+	void display() {
+		System.out.println("enter the brand:"+brand);
+		System.out.println("enter the price:"+ price);
+		
+	}
+}
+
+public class product {
+
+	public static void main(String[] args) {
+		car a=new car();
+		a.brand= "Toyota";
+		a.price=12000;
+		
+		car b=new car();
+		b.brand="mahindra";
+		b.price=100000;
+		a.display();
+		b.display();
+      
+        
+	}
+
+}
