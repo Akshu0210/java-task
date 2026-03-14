@@ -1,1 +1,159 @@
+package pr;
 
+import java.util.Scanner;
+class zoo{
+	void animal() {
+		System.out.println("eating");
+	}
+}
+class animal extends zoo{
+	void dog() {
+		System.out.println("barking");
+	}
+}
+
+
+public class product {
+
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		animal a=new animal();
+		a.animal();
+		a.dog();
+	}
+	
+
+}
+// 2nd one
+
+package pr;
+
+import java.util.Scanner;
+
+class vehicle {
+    void twowheeler() {
+        System.out.println("It has two wheels");
+    }
+}
+
+class car extends vehicle {
+    void fourwheeler() {
+        System.out.println("It runs fast");
+    }
+}
+
+public class product {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        car c = new car();
+        c.fourwheeler();
+        c.twowheeler();
+    }
+}
+
+//3th one
+package pr;
+
+import java.util.Scanner;
+
+class collage {
+    void name() {
+        System.out.println("akshaya");
+    }
+    void age() {
+    	System.out.println("21");
+    }
+}
+
+class database extends collage {
+    void rollno() {
+        System.out.println("21");
+    }
+    void mark() {
+    	System.out.println("89");
+    }
+}
+
+public class product {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        database c = new database();
+        c.age();
+        c.mark();
+        c.name();
+        c.rollno();
+    }
+}
+
+//4th one
+package pr;
+
+import java.util.Scanner;
+
+class work {
+    void employ() {
+        System.out.println("get salaray");
+    }
+  
+}
+
+class company extends work {
+    void manager() {
+        System.out.println("get bonus");
+    }
+    
+}
+
+public class product {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+      company c=new company();
+      c.employ();
+      c.manager();
+    }
+}
+
+5th one
+
+import java.util.Scanner;
+
+class Shape {
+    void area() {
+        System.out.println("Area calculation");
+    }
+}
+
+class Circle extends Shape {
+    void area(double r) {
+        double area = 3.14 * r * r;
+        System.out.println("Area of Circle = " + area);
+    }
+}
+
+class Rectangle extends Shape {
+    void area(double l, double b) {
+        double area = l * b;
+        System.out.println("Area of Rectangle = " + area);
+    }
+}
+
+public class product {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        Circle c = new Circle();
+        Rectangle r = new Rectangle();
+
+        System.out.println("Enter radius of circle:");
+        double radius = sc.nextDouble();
+        c.area(radius);
+
+        System.out.println("Enter length and breadth of rectangle:");
+        double l = sc.nextDouble();
+        double b = sc.nextDouble();
+        r.area(l, b);
+    }
+}
